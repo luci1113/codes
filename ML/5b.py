@@ -1,45 +1,55 @@
+import numpy as np
 import pandas as pd
-from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import KMeans
-import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import AdaBoostClassifier, GradientBoostingClassifier
+import xgboost as xgb
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score
 
-# Load the dataset
-data = pd.read_csv('Iris.csv')
+# Load the Iris dataset
+iris = load_iris()
+X, y = iris.data, iris.target
 
-# Standardize the data
-scaler = StandardScaler()
-data_scaled = scaler.fit_transform(data.drop('Species', axis=1))
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Range of K values to test
-k_values = range(1, 11)
+# Define and train the models
+ada_classifier = AdaBoostClassifier(n_estimators=50, random_state=0)
+gboost_classifier = GradientBoostingClassifier(n_estimators=50, random_state=0)
+xgboost_classifier = xgb.XGBClassifier(n_estimators=50, random_state=0)
 
-# Initialize lists to store inertia (within-cluster sum of squares) for each K
-inertia = []
+ada_classifier.fit(X_train, y_train)
+gboost_classifier.fit(X_train, y_train)
+xgboost_classifier.fit(X_train, y_train)
 
-# Perform K-Means clustering for different values of K
-for k in k_values:
-    kmeans = KMeans(n_clusters=k, random_state=42)
-    kmeans.fit(data_scaled)
-    inertia.append(kmeans.inertia_)
+# Make predictions
+ada_pred = ada_classifier.predict(X_test)
+gboost_pred = gboost_classifier.predict(X_test)
+xgboost_pred = xgboost_classifier.predict(X_test)
 
-# Plot the elbow curve
-plt.figure(figsize=(8, 6))
-plt.plot(k_values, inertia, marker='o', linestyle='-')
-plt.title('Elbow Method for Optimal K')
-plt.xlabel('Number of Clusters (K)')
-plt.ylabel('Inertia')
-plt.grid(True)
-plt.show()
+# Evaluate the models
+metrics = {
+    "Accuracy": accuracy_score,
+    "Precision": precision_score,
+    "Recall": recall_score,
+    "F1 Score": f1_score,
+    "ROC-AUC": roc_auc_score,
+}
 
-# Optimal number of clusters (choose based on the elbow plot)
-optimal_k = 3
+results = {"Model": [], "Metric": [], "Score": []}
 
-# Perform K-Means clustering with the optimal K
-kmeans = KMeans(n_clusters=optimal_k, random_state=42)
-clusters = kmeans.fit_predict(data_scaled)
+models = {
+    "AdaBoost": ada_pred,
+    "Gradient Tree Boosting": gboost_pred,
+    "XGBoost": xgboost_pred,
+}
 
-# Assign cluster labels to the original dataset
-data['Cluster'] = clusters
+for model_name, predictions in models.items():
+    for metric_name, metric_function in metrics.items():
+        score = metric_function(y_test, predictions)
+        results["Model"].append(model_name)
+        results["Metric"].append(metric_name)
+        results["Score"].append(score)
 
-# Display or save the results as needed
-print(data.head())
+results_df = pd.DataFrame(results)
+print(results_df)
