@@ -1,0 +1,101 @@
+Prop_id,prop_type,Neighborhood,Bedrooms,Bathrooms,Sq_ft,Year_built,sale_price
+1,Condo,Rural,4,4,1934,2016,275729
+2,House,Rural,1,1,1402,2022,134265
+3,House,Suburb B,4,4,1463,1988,291206
+4,Appartment,Downtown,2,1,2497,1988,208841
+5,Appartment,Suburb B,2,4,1787,1984,192586
+6,Condo,Rural,4,1,1465,2004,274619
+7,House,Suburb A,5,1,2980,2004,107352
+8,Appartment,Downtown,5,1,1493,1991,141109
+9,Appartment,Downtown,1,4,1441,2008,260737
+10,House,Suburb A,3,1,2583,1994,259058
+11,Appartment,Suburb A,2,3,1443,2019,133417
+12,House,Rural,3,1,1749,2001,201336
+13,Condo,Suburb B,5,3,1128,1981,114505
+14,Condo,Suburb A,5,4,1489,1999,122060
+15,Appartment,Downtown,2,3,1915,1999,292023
+16,Condo,Suburb B,2,3,1407,2013,241587
+17,Appartment,Downtown,1,3,2265,2020,158124
+18,Appartment,Downtown,5,4,1932,1982,285112
+19,Condo,Downtown,1,1,1215,1988,206974
+20,Appartment,Rural,4,3,2058,1990,101304
+21,Condo,Rural,5,1,2205,2006,269801
+22,House,Suburb B,3,2,2227,2008,174346
+23,House,Rural,1,2,2364,1980,235763
+24,Appartment,Rural,4,1,2912,2002,114981
+25,House,Downtown,5,4,2532,1995,253665
+26,Condo,Suburb A,5,4,2887,2010,232495
+27,Condo,Downtown,4,3,1502,1979,216235
+28,House,Rural,4,4,1094,2012,106735
+29,Condo,Downtown,4,2,1419,1993,112981
+30,Appartment,Rural,5,3,2759,2004,246670
+31,House,Downtown,3,2,2117,1995,250404
+32,Condo,Suburb B,1,1,1954,1995,289314
+33,House,Suburb B,3,4,2853,2007,173433
+34,Appartment,Suburb B,4,2,1467,1985,103603
+35,Appartment,Suburb A,3,1,1067,1988,182241
+36,House,Suburb A,5,1,2105,2007,109397
+37,Appartment,Suburb A,5,4,1238,1988,119998
+38,Appartment,Rural,2,2,2635,1984,202530
+39,Appartment,Suburb B,3,2,1548,2012,225958
+40,House,Suburb B,3,3,1579,1982,199139
+41,House,Downtown,3,1,2584,2007,156691
+42,Condo,Rural,2,1,2858,1987,163993
+43,Condo,Suburb B,4,2,2228,1982,179963
+44,Condo,Rural,3,2,2883,1983,139829
+45,House,Rural,3,4,2247,1992,209460
+46,Appartment,Rural,4,3,2483,1989,159639
+47,House,Suburb A,4,1,2079,2007,133802
+48,House,Suburb A,1,2,2737,2002,145991
+49,Appartment,Suburb A,2,4,1007,2000,263501
+50,Appartment,Suburb B,5,3,2733,1990,290475
+51,Condo,Suburb B,2,4,1278,2004,200719
+52,Appartment,Suburb B,3,4,1568,1988,123816
+53,Appartment,Downtown,3,4,2446,2018,114438
+54,Appartment,Rural,3,3,1947,2020,284675
+55,Condo,Downtown,4,2,1630,1983,145985
+56,House,Suburb A,2,2,2230,2004,119343
+57,Condo,Downtown,2,2,2852,1980,192380
+58,House,Suburb B,4,4,1371,2014,177965
+59,House,Rural,2,4,1802,1986,191474
+60,House,Downtown,3,1,1733,1997,130453
+61,Condo,Downtown,1,1,2035,2000,281091
+62,House,Rural,1,1,1478,1999,175721
+63,Appartment,Suburb B,2,1,1952,2003,230207
+64,Condo,Rural,3,3,2310,1995,294788
+65,House,Downtown,4,1,2837,2004,155907
+66,Condo,Downtown,2,4,2529,2015,195502
+67,House,Suburb B,4,2,2797,2020,211816
+68,Appartment,Rural,4,2,1246,2006,295418
+69,House,Rural,4,3,2497,2006,116166
+70,Condo,Downtown,5,2,2648,1987,297058
+71,Condo,Downtown,4,2,2391,1996,229787
+72,House,Suburb B,1,3,1416,2010,174250
+73,Appartment,Suburb A,2,2,1677,2021,178097
+74,Appartment,Suburb A,2,1,1254,2021,141922
+75,House,Suburb A,2,3,1914,2016,129749
+76,House,Rural,4,4,1539,2015,105587
+77,House,Downtown,1,2,1603,1997,245642
+78,House,Suburb A,2,2,2469,1987,260546
+79,Appartment,Rural,2,1,1925,1986,196253
+80,Appartment,Suburb A,4,4,1766,2022,144132
+81,House,Rural,2,1,2036,1989,103380
+82,Appartment,Suburb A,1,3,2482,1996,238197
+83,Appartment,Suburb B,4,1,2449,1991,252858
+84,House,Suburb B,4,2,2569,2006,210619
+85,House,Downtown,1,3,1402,1988,126108
+86,Appartment,Downtown,2,1,2932,1988,269307
+87,Condo,Suburb B,4,1,1765,2012,297195
+88,Appartment,Suburb A,2,3,1267,2019,175752
+89,House,Rural,2,4,1959,2015,223633
+90,House,Rural,4,4,2250,2016,210848
+91,Appartment,Suburb A,2,4,1146,1981,106772
+92,Condo,Suburb A,3,4,1746,2001,182377
+93,Appartment,Suburb B,3,3,2209,1986,191473
+94,House,Suburb A,3,2,1292,2005,197756
+95,Appartment,Downtown,4,4,2479,1993,129655
+96,Appartment,Rural,2,3,2488,1982,183387
+97,House,Suburb B,2,4,2812,2015,173658
+98,House,Rural,4,1,2423,1983,273458
+99,House,Downtown,1,1,2891,2000,156762
+100,House,Suburb B,2,2,1794,2022,263142
