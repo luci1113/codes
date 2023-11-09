@@ -1,0 +1,1 @@
+Certainly! Here's a Python program that reads a text file, performs stop word removal and stemming on its content, and then saves the preprocessed text into another file. Make sure you have the NLTK library installed as mentioned in the previous answer.
